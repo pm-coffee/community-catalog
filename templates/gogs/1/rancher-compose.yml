@@ -1,6 +1,6 @@
 .catalog:
   name: "Custom-Gogs"
-  version: "v0.0.1"
+  version: "custom-v0.0.1"
   description: |
     A painless self-hosted Git service.
   uuid: gogs-0
