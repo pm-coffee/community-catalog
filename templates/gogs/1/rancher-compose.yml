@@ -1,10 +1,10 @@
 .catalog:
-  name: "Gogs"
-  version: "v0.8.43"
+  name: "Custom-Gogs"
+  version: "v0.0.1"
   description: |
     A painless self-hosted Git service.
   uuid: gogs-0
-  minimum_rancher_version: v0.51.0
+  minimum_rancher_version: v1.1.0
   questions:
     - variable: public_port
       description: "public port to access the mysql server"
