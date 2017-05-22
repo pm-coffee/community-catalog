@@ -1,6 +1,6 @@
 .catalog:
   name: "Custom-Gogs"
-  version: "custom-v0.0.3:"
+  version: "custom-v0.0.4:"
   description: |
     A painless self-hosted Git service.
   uuid: gogs-0
@@ -16,7 +16,7 @@
       description: "http port to access gogs webui"
       label: "Http Port"
       required: true
-      default: "10080" 
+      default: "10082" 
       type: "int"
     - variable: ssh_port
       description: "ssh port to access gogs cli"
