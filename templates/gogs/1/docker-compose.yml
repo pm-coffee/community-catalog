@@ -5,10 +5,11 @@ gogs:
         - ${ssh_port}:22
     links:
         - mysql:db
-
+    
 mysql:
     image: mysql:latest
     ports:
         - ${public_port}:3306
     environment:
-        MYSQL_ROOT_PASSWORD: ${mysql_password}
+        - MYSQL_ROOT_PASSWORD: ${mysql_password}
+        - MYSQL_DATABASE=gogs
