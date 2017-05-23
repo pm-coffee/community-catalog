@@ -1,6 +1,6 @@
 .catalog:
   name: "Custom-Gogs"
-  version: "custom-v0.0.4:"
+  version: "custom-v0.0.5:"
   description: |
     A painless self-hosted Git service.
   uuid: gogs-0
@@ -30,5 +30,11 @@
       required: true
       default: ""
       type: "password"
+    - variable: data_volume_container_name
+      description: "事前に作成した Data Volume Container Name"
+      label: "Data Volume Container Name"
+      required: true
+      default: "data_store_container"
+      type: "string"
 
 gogs:

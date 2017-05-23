@@ -4,12 +4,16 @@ gogs:
         - ${http_port}:3000
         - ${ssh_port}:22
     links:
-        - mysql:db
+        - mysql:gogs_db
+    volumes_from:
+      - ${data_volume_container_name}
     
 mysql:
     image: mysql:latest
     ports:
         - ${public_port}:3306
+    volumes_from:
+      - ${data_volume_container_name}
     environment:
         MYSQL_ROOT_PASSWORD: ${mysql_password}
         MYSQL_DATABASE: gogs
