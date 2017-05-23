@@ -1,6 +1,6 @@
 .catalog:
   name: "Custom-Gogs"
-  version: "custom-v0.0.5:"
+  version: "custom-v0.0.6:"
   description: |
     A painless self-hosted Git service.
   uuid: gogs-0
@@ -10,31 +10,31 @@
       description: "public port to access the mysql server"
       label: "Public Port"
       required: true
-      default: "3306"
-      type: "int"
+      default: 3306
+      type: int
     - variable: http_port
       description: "http port to access gogs webui"
       label: "Http Port"
       required: true
-      default: "10082" 
-      type: "int"
+      default: 10082
+      type: int
     - variable: ssh_port
       description: "ssh port to access gogs cli"
       label: "SSH Port"
       required: true
-      default: "222"
-      type: "int"
+      default: 222
+      type: int
     - variable: mysql_password
       description: "mysql root password"
       label: "Mysql Password"
       required: true
       default: ""
-      type: "password"
+      type: password
     - variable: data_volume_container_name
-      description: "事前に作成した Data Volume Container Name"
+      description: "Data Volume Container Name"
       label: "Data Volume Container Name"
       required: true
       default: "data_store_container"
-      type: "string"
+      type: string
 
 gogs:
