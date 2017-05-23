@@ -4,7 +4,7 @@ gogs:
         - ${http_port}:3000
         - ${ssh_port}:22
     links:
-        - mysql:gogs_db
+        - mysql:gogs-db
     volumes_from:
       - ${data_volume_container_name}
     
